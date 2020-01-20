@@ -21,9 +21,9 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
+  title: 'QS Guide', // Title for your website.
+  tagline: 'A website full of guides',
+  url: 'https://qsblob1.z6.web.core.windows.net', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -38,7 +38,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
+    {doc: 'accruals', label: 'Docs'},
     {doc: 'doc4', label: 'API'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
@@ -73,7 +73,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} Kaps`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
