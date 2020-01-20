@@ -1,6 +1,6 @@
 {
-  "Guides": {
-    "Accruals": ["accruals"],
+  "docs": {
+    "Guides": ["accruals"],
     "First Category": ["doc2"],
     "Second Category": ["doc3"]
   },
