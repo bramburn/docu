@@ -20,3 +20,17 @@ steps:
     cd website/
     npm run build
   displayName: 'npm install and build'
+- task: CopyFiles@2
+    displayName: 'Copy deployment content'
+    inputs:
+      SourceFolder: '$(Build.SourcesDirectory)/website/build'
+      contents: '**\*'
+      targetFolder: $(Build.ArtifactStagingDirectory)/deployment/build
+      cleanTargetFolder: true
+- task: CopyFiles@2
+    displayName: 'Copy deployment content'
+    inputs:
+      SourceFolder: '$(Build.SourcesDirectory)/deployment'
+      contents: '**\*'
+      targetFolder: $(Build.ArtifactStagingDirectory)/deployment
+      cleanTargetFolder: true
