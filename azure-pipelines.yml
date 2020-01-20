@@ -35,3 +35,7 @@ steps:
     contents: '**\*'
     targetFolder: $(Build.ArtifactStagingDirectory)/deployment
     cleanTargetFolder: true
+- task: PublishBuildArtifacts@1
+displayName: 'Publish Artifact'
+inputs:
+  PathtoPublish: '$(build.artifactstagingdirectory)'
