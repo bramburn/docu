@@ -1,5 +1,5 @@
 ---
-id: accruals-guide
+id: accruals1
 title: Accruals
 sidebar_label: Accruals Guide
 ---
