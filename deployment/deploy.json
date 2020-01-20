@@ -4,7 +4,7 @@
   "parameters": {
     "StorageName": {
       "type":"string",
-      "defaultValue": "qsBlob",
+      "defaultValue": "qsblob1",
       "maxLength": 24
     }
   },
