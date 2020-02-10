@@ -19,7 +19,7 @@ steps:
     cd website/
     npm install
     npm run build
-  displayName: 'npm install and build'
+  displayName: 'npm install and build Docusaurus'
 
 - task: CopyFiles@2
   displayName: 'Copy deployment content'
@@ -34,13 +34,8 @@ steps:
     contents: '**\*'
     targetFolder: $(Build.ArtifactStagingDirectory)/deployment
     cleanTargetFolder: true
-# - task: PublishBuildArtifacts@1
-# displayName: 'Publish Artifact'
-# inputs:
-#   PathtoPublish: '$(build.artifactstagingdirectory)'
 - task: PublishPipelineArtifact@1
   inputs:
     artifactName: 'drop'
-#    targetPath: '$(Pipeline.Workspace)'
     pathToPublish: '$(Build.ArtifactStagingDirectory)'
     publishLocation: 'pipeline'
